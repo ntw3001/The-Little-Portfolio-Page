@@ -1,0 +1,44 @@
+.list li {
+  list-style: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 0.5rem;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  cursor: pointer;
+  background-color: #C4B5FD;
+  pointer-events: none;
+}
+
+.list li.act,
+.list li.prev,
+.list li.next {
+  pointer-events: auto;
+}
+
+/* Slide states */
+.list .hide {
+  opacity: 0;
+  transform: translateY(500px) scale(0.8);
+  pointer-events: none;
+}
+.list .prev {
+  transform: translateX(-220px) scale(0.85);
+  opacity: 0.5;
+}
+.list .act {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+.list .next {
+  transform: translateX(220px) scale(0.85);
+  opacity: 0.5;
+}
+.list .prevprev {
+  transform: translateX(-440px) scale(0.7);
+  opacity: 0;
+}
+.list .nextnext {
+  transform: translateX(440px) scale(0.7);
+  opacity: 0;
+}

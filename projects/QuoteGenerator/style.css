@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+  text-align: center;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.quote-container {
+  width: 350px;
+  background-color: #3e7c94;
+  color: #fff;
+  position: relative;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 6rem 2rem;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+#quote-output {
+  font-family: 'Bad Script', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+#author-output {
+  position: relative;
+  margin-top: 5rem;
+}
+
+span::before {
+  content: '\201c';
+  font-size: 6rem;
+  font-family: arial, Helvetica, sans-serif;
+  color: #fdbb11;
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  animation: anim .5s ease-out;
+}
+
+span::after {
+  content: '\201d';
+  font-size: 6rem;
+  font-family: arial, Helvetica, sans-serif;
+  color: #fdbb11;
+  position: absolute;
+  right: 100px;
+  bottom: 60px;
+  animation: anim .5s ease-out;
+}
+
+span, small {
+  animation: anim .5s ease-out;
+}
+
+@keyframes anim {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    opactity: 1;
+    transform: scale(1);
+  }
+}

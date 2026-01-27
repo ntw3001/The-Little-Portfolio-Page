@@ -2,7 +2,7 @@
   list-style: none;
   position: absolute;
   width: 200px;
-  height: 200px;
+  height: 160px;
   border-radius: 0.5rem;
   transition: transform 0.5s ease, opacity 0.5s ease;
   cursor: pointer;
@@ -41,4 +41,8 @@
 .list .nextnext {
   transform: translateX(440px) scale(0.7);
   opacity: 0;
+}
+
+#blurbDiv {
+  white-space: pre-wrap;
 }

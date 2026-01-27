@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  width: 300px;
+  background-color: #222;
+  color: #fff;
+  height: 80px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid #555;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.active {
+  box-shadow: inset 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+}

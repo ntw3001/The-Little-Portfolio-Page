@@ -1,10 +1,10 @@
 const slides = [
-  { title: "Solfie", img: "images/solfie.png", link: "https://solfie-398005.web.app/themespace", blurb: "projects/Solfie/blurb.txt" },
+  { title: "Solfie", img: "images/solfie.png", link: "https://solfie-398005.web.app/themespace" },
   { title: "BBQuery", img: "images/ball.png", link: "projects/BBQuery/index.html" },
   { title: "FRNSHR", img: "images/FRNSHR.png", link: "https://whispering-waters-21428-518fbcb27ec7.herokuapp.com/" },
-  { title: "Dog Checker", img: "images/strawberry.jpg", link: "projects/DogChecker/index.html" },
+  { title: "Dog Checker", img: "images/dogBuddy.png", link: "projects/DogChecker/index.html" },
   // { title: "Sumer Sale", img: "images/strawberry.jpg", link: "projects/SumerSale/index.html" },
-  { title: "Text Formatter", img: "images/strawberry.jpg", link: "projects/TextFormatter/index.html" },
+  { title: "Text Formatter", img: "images/textFormatter.png", link: "projects/TextFormatter/index.html" },
 ];
 
 const blurbs = {
@@ -33,7 +33,7 @@ function renderSlides() {
     li.classList.add("slide");
     li.innerHTML = `
       <a href="${slide.link}" target="_blank" class="flex flex-col items-center p-2">
-        <img src="${slide.img}" alt="${slide.title}" class="w-24 h-24 rounded-md mb-2">
+        <img src="${slide.img}" alt="${slide.title}" class="w-24 rounded-md mb-2">
         <span class="text-center text-sm font-semibold text-gray-800">${slide.title}</span>
       </a>
     `;

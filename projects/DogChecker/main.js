@@ -43,7 +43,6 @@ elements.forEach(function (element) {
 function getRandomColor() {
   const hexRange = "0123456789ABCDEF";
   let letter = hexRange.slice(lowVal, highVal);
-  console.log(letter);
   let color = "#";
   let arrayEntry1 = "";
   for (let i = 0; i<2; i++) {

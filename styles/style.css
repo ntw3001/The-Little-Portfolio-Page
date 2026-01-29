@@ -1,3 +1,5 @@
+/* Carousel Styles */
+
 .list li {
   list-style: none;
   position: absolute;
@@ -16,7 +18,7 @@
   pointer-events: auto;
 }
 
-/* Slide states */
+/* Carousel slide states */
 .list .hide {
   opacity: 0;
   transform: translateY(500px) scale(0.8);
@@ -45,4 +47,21 @@
 
 #blurbDiv {
   white-space: pre-wrap;
+}
+
+/* Blood Bowl Page */
+
+.back-avatar::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid white;
 }

@@ -1,5 +1,5 @@
 const slides = [
-  { title: "Solfie", img: "images/solfie.png", link: "https://solfie-398005.web.app/themespace" },
+  { title: "Solfie", img: "images/solfie.png", link: "https://solfie-398005.web.app/" },
   { title: "BBQuery", img: "images/ball.png", link: "projects/BBQuery/index.html" },
   { title: "FRNSHR", img: "images/FRNSHR.png", link: "https://whispering-waters-21428-518fbcb27ec7.herokuapp.com/" },
   { title: "Dog Checker", img: "images/dogBuddy.png", link: "projects/DogChecker/index.html" },
@@ -8,7 +8,7 @@ const slides = [
 ];
 
 const blurbs = {
-  "Solfie": "Solfie is a responsive web app built with Vue 3, Vite, and Vuex, using Firebase for hosting, authentication, and storage. It integrates OpenAI threads and completions and works seamlessly on both desktop and mobile.</br></br>Solfie is a life-management application that allows users to prepare and record personal goals and daily targets. Features currently in development will allow users to share and discuss specific goals, with the potential of assisting in collaboration between therapists and clients.</br></br>More details about using this app can be found at <a href='https://ishikismoothy.jp/2025/12/23/solfie-quick-start/' target='_blank' style='font-weight:600; text-decoration:underline'> the Ishikismoothy blog</a> (in Japanese).",
+  "Solfie": "Solfie is a responsive web app built with Vue 3, Vite, and Vuex, using Firebase for hosting, authentication, and storage. It integrates OpenAI threads and completions and works seamlessly on both desktop and mobile.</br></br>Solfie is a life-management application that allows users to prepare and record personal goals and daily targets. Features currently in development will allow users to share and discuss specific goals, with the potential of assisting in collaboration between therapists and clients.</br></br>More details about using this app can be found at <a href='https://ishikismoothy.jp/2025/12/23/solfie-quick-start/' target='_blank' style='font-weight:600; text-decoration:underline'> the Ishikismoothy blog</a> (Japanese language).",
 
   "BBQuery": "BBQuery is a lightweight conversational assistant for LINE, built using Ruby. It allows players of Blood Bowl to look up tables quickly during a game, as well as check available inducement bonuses for their team.",
 
@@ -32,7 +32,7 @@ function renderSlides() {
     const li = document.createElement("li");
     li.classList.add("slide");
     li.innerHTML = `
-      <a href="${slide.link}" target="_blank" class="flex flex-col items-center p-2">
+      <a href="${slide.link}" class="flex flex-col items-center p-2">
         <img src="${slide.img}" alt="${slide.title}" class="w-24 rounded-md mb-2">
         <span class="text-center text-sm font-semibold text-gray-800">${slide.title}</span>
       </a>
@@ -69,7 +69,7 @@ function updateSlides() {
 
   const activeSlide = lis[activeIndex];
   const link = activeSlide.querySelector("a").href;
-  activeSlide.onclick = () => window.open(link, "_blank");
+  activeSlide.onclick = () => {window.location.href = link;};
 
   lis[(activeIndex - 1 + total) % total].onclick = (e) => {
     e.preventDefault();

@@ -7,6 +7,8 @@
     "heroku-postbuild": "echo 'skip build if not needed'"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "@tailwindcss/cli": "^4.1.18",
+    "express": "^4.18.2",
+    "tailwindcss": "^4.1.18"
   }
 }

@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Nick Westbrook - Portfolio</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="styles/carouselStyle.css">
-        <link rel="icon" href="/favicon.png">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Westbrook - Portfolio</title>
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="/favicon.png">
+  </head>
 
-    <body class="bg-orange-100">
-        <!-- Header -->
-        <header class="bg-red-400 text-white p-6 mb-8 shadow-lg">
-            <h1 class="text-3xl font-bold text-center">Nick Westbrook</h1>
-            <p class="text-xl text-center">General Extraordinaire</p>
-        </header>
+  <body class="bg-orange-100 flex flex-col min-h-screen">
+    <main class="flex-grow">
+      <!-- Header -->
+      <header class="bg-red-400 text-white p-6 mb-8 shadow-lg">
+        <h1 class="text-3xl font-bold text-center">Nick Westbrook</h1>
+        <p class="text-xl text-center">General Extraordinaire</p>
+      </header>
 
-        <!-- About Me -->
+      <!-- About Me -->
 
-        <!-- About Me Section -->
-          <div id="container" class="flex flex-row content-evenly flex-wrap justify-center h-[600px]">
-              <div id="about-me" class="flex flex-col items-center">
-                <div id="experience" class="w-96 mb-8 mx-4 bg-white p-4 rounded-lg shadow-md flex-col flex items-center">
-                    <div class="flex-col flex items-center w-64 h-[540px]">
-                      <h2 class="text-3xl font-bold mb-2 text-red-400">About Me</h2>
-                      <img src="images/strawberry.jpg"
-                      alt="Nick Westbrook"
-                          class="w-32 h-32 mt-4 rounded-full mr-4 border-4 border-red-400"
-                      />
-                      <p class="font-semibold mt-8 mb-4">
-                          It's me, Nick! The famous fullstack developer! I'm British and live in Yokohama. I spent several years teaching English to children and adults before attending Le Wagon's web development bootcamp in Tokyo. Since graduating, I've continued to study and train as a developer, working on various  projects to hone my skills.
-                      </p>
-                    </div>
-                </div>
-              </div>
-              <div class="w-96 mb-8 mx-4 bg-white p-4 rounded-lg shadow-md flex-col flex text-sm">
-                <p>As strong as an ox, as wise as a king, it's Nick!</p>
-              </br>
-                <p>As old as the mountains, as large as the moon, it's Nick!</p>
-                </br>
-                <p>Here to reave your problems in twain, destroying them utterly and leaving their allies in disarray, it's Nick!</p>
-                </br>
-                <p>Meeting no equal in land, sea, or sky, this is Nick!</p>
-                </br>
-                <p>Welcome to Nick.</p>
-                <img src="images/fajitaSwan.png" alt="Fajita Swan" class="mx-auto mt-4"/>
-              </div>
+      <!-- About Me Section -->
+      <div class="flex flex-row content-evenly flex-wrap justify-center h-[600px]">
+        <div id="about-me" class="flex flex-col items-center">
+          <div id="experience" class="w-96 mb-8 mx-4 bg-white p-4 rounded-lg shadow-md flex-col flex items-center">
+            <div class="flex-col flex items-center w-64 h-[540px]">
+              <h2 class="text-3xl font-bold mb-2 text-red-400">About Me</h2>
+              <img src="images/strawberry.jpg"
+              alt="Nick Westbrook"
+                  class="w-32 h-32 mt-4 rounded-full mr-4 border-4 border-red-400"
+              />
+              <p class="font-semibold mt-8 mb-4">
+                  It's me, Nick! The famous fullstack developer! I'm British and live in Yokohama. I spent several years teaching English to children and adults before attending Le Wagon's web development bootcamp in Tokyo. Since graduating, I've continued to study and train as a developer, working on various  projects and teams to build my skills.
+              </p>
             </div>
-
-            <div class="flex flex-col items-center">
-              <div id="projects" class="w-[540px] h-[640px] mb-8 mx-4 bg-white p-4 rounded-lg shadow-md relative flex-col flex items-center">
-                  <h2 class="text-3xl font-bold mb-2 h-12 text-red-400">Projects</h2>
-                  <div class="w-full flex justify-center my-8">
-                    <ul class="list relative flex justify-center w-96 h-36">
-                    </ul>
-                  </div>
-                  <div id="blurb" >
-                  </div>
-              </div>
-            </div>
-
-            <div id="socials" class="mb-8 mx-4 bg-white p-4 rounded-lg shadow-md flex-col flex items-center">
-                <h3 class="text-xl font-bold mb-2 text-red-400">Contacts</h3>
-                    <div class="flex items-center flex-row space-x-4">
-                        <a href="https://www.linkedin.com/in/nick-westbrook-30557941/">
-                            <img class="w-12 h-12"
-                            src = "https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-512.png"
-                            alt="LinkedIn"/></a>
-                        <a href="https://github.com/ntw3001">
-                            <img class="w-12 h-12"
-                            src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png"
-                            alt="Github"/></a>
-                    </div>
-            </div>
+          </div>
         </div>
+        <div class="w-96 mb-8 mx-4 bg-white p-4 rounded-lg shadow-md flex-col flex text-sm">
+          <p>As strong as an ox, as wise as a king, it's Nick!</p>
+          </br>
+          <p>As old as the mountains, as large as the moon, it's Nick!</p>
+          </br>
+          <p>Here to reave your problems in twain, destroying them utterly and leaving their allies in disarray, it's Nick!</p>
+          </br>
+          <p>Meeting no equal in land, sea, or sky, this is Nick!</p>
+          </br>
+          <p>Welcome to Nick.</p>
+          <img src="images/fajitaSwan.png" alt="Fajita Swan" class="mx-auto mt-4"/>
+        </div>
+      </div>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Nick Westbrook</p>
-        </footer>
+      <div class="flex flex-col items-center">
+        <div id="projects" class="w-[540px] h-[640px] mb-8 mx-4 bg-white p-4 rounded-lg shadow-md relative flex-col flex items-center">
+          <h2 class="text-3xl font-bold mb-2 h-12 text-red-400">Projects</h2>
+          <div class="w-full flex justify-center my-8">
+            <ul class="list relative flex justify-center w-96 h-36">
+            </ul>
+          </div>
+          <div id="blurb" >
+          </div>
+        </div>
+      </div>
 
-        <script type="module" src="carousel.js"></script>
-    </body>
+      <div id="socials" class="mb-8 mx-4 bg-white p-4 rounded-lg shadow-md flex-col flex items-center">
+        <h3 class="text-xl font-bold mb-2 text-red-400">Contacts</h3>
+        <div class="flex items-center flex-row space-x-4">
+          <a href="https://www.linkedin.com/in/nick-westbrook-30557941/">
+            <img class="w-12 h-12"
+            src = "https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-512.png"
+            alt="LinkedIn"/>
+          </a>
+          <a href="https://github.com/ntw3001">
+            <img class="w-12 h-12"
+              src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png"
+              alt="Github"/>
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+      <!-- Footer -->
+    <footer class="bg-red-400 text-white w-full p-2 text-center mt-2 shadow-lg">
+      <p>&copy; 2024 Nick Westbrook</p>
+    </footer>
+
+    <script type="module" src="carousel.js"></script>
+  </body>
 </html>

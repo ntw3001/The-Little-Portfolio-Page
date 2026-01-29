@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BBQuery</title>
-</head>
-<body>
-  BBQery Info
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBQuery, the Blood Bowl Knowing Tool</title>
+    <link rel="stylesheet" href="../styles/output.css">
+    <link rel="icon" href="favicon.png">
+  </head>
 
-<img src="images/BBqueryQRcode.png" alt="BBQuery QR Code" width="400">
-</body>
+  <body class="bg-[url('/projects/BBQuery/images/BBBkgrnd.jpg')] bg-center bg-no-repeat bg-cover min-h-screen flex flex-col">
+    <main class="flex-grow">
+    <!-- Header -->
+    <header class="bg-green-900 text-neutral-200 p-2 mb-8 shadow-lg grid grid-cols-3 items-center h-26 px-4">
+      <div>
+        <a href="/index.html"
+          class="relative inline-block w-16 h-16 ml-4 rounded-t-full rounded-br-full
+                border-4 border-neutral-200 shadow-lg
+                rounded-lg rotate-45">
+          <img src="/images/strawberry.jpg"
+            alt="Nick Westbrook"
+            class="absolute inset-0 w-full h-full
+                  rounded-full
+                  -rotate-45"/>
+        </a>
+      </div>
+      <div class="flex flex-col items-center">
+        <h1 class="text-3xl font-bold text-center">BBQuery</h1>
+        <p>The Blood Bowl Knowing Tool</p>
+      </div>
+    </header>
+
+    <div class="flex flex-col items-center mb-8 px-4">
+      <div flex flex-row justify-center>
+        <div class=" w-200 border-neutral-200 border-4 rounded-lg shadow-lg bg-white/80 p-4 mb-4">
+            <h2 class="text-2xl font-bold mb-2 text-green-900">What is BBQuery?</h2>
+            <p class="mb-4">
+              BBQuery is a small project built to assist players in the tabletop game Blood Bowl. It serves as a quick reference tool, allowing players to quickly look up dice tables during gameplay and check available options for match preparation.
+            </p>
+            </br>
+            <p class="mb-4">
+              It was written as a personal project using Ruby, built on a framework supplied by Le Wagon during their web development bootcamp.
+            </p>
+            <p class="mb-4">
+              To use BBQuery, simply scan the QR code below and add it as a LINE contact.
+            </p>
+        </div>
+
+        <div class="border-neutral-200 border-4 rounded-lg shadow-lg bg-white/80 p-4 mb-4 flex justify-around">
+          <img src="/projects/BBQuery/images/BBqueryQRcode.png" alt="BBQuery QR Code" class="h-[300px]">
+          <img src="/projects/BBQuery/images/BBQueryScreen.jpg" alt="BBQuery screenshot" class="h-[300px]">
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-neutral-200 w-full p-2 text-center mt-2 shadow-lg">
+      <p>&copy; 2024 Nick Westbrook</p>
+      <p>Background image from gamemat.eu</p>
+    </footer>
+  </body>
 </html>

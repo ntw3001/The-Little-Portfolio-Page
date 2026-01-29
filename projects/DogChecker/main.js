@@ -79,9 +79,9 @@ elements.forEach(function (element) {
 submitBtn.addEventListener('click', function () {
   if (chosenElement === correctColor) {
     sessionStorage.setItem("result", "winner");
-    window.location.href = "result.html";
+    window.location.href = "/projects/DogChecker/result.html";
   } else {
     sessionStorage.setItem("result", "loser");
-    window.location.href = "result.html";
+    window.location.href = "/projects/DogChecker/result.html";
   }
 });

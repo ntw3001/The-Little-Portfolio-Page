@@ -567,6 +567,9 @@
   .bg-green-900 {
     background-color: var(--color-green-900);
   }
+  .bg-neutral-200 {
+    background-color: var(--color-neutral-200);
+  }
   .bg-orange-100 {
     background-color: var(--color-orange-100);
   }
